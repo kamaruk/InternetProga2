@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+
+{% block title %}Продукты{% endblock %}
+
+{% block content %}
+    <section class="products-section">
+            <div class="product-item">
+                <img src="static/image/cake.png" alt="Торт">
+                <div class="product-info">
+                    <h3>Торт "Шоколадный рай"</h3>
+                    <p>Вкуснейший шоколадный торт с кремом и ягодами.</p>
+                </div>
+                <div class="product-price">1200 ₽</div>
+            </div>
+            <div class="product-item">
+                <img src="static/image/cupcake.png" alt="Капкейк">
+                <div class="product-info">
+                    <h3>Капкейки с карамелью</h3>
+                    <p>Нежные капкейки с начинкой из карамели и сливочного крема.</p>
+                </div>
+                <div class="product-price">150 ₽</div>
+            </div>
+    </section>
+{% endblock %}
