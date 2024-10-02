@@ -1,3 +1,4 @@
+import json
 import os
 import urllib
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -5,7 +6,8 @@ from urllib.parse import urlparse, parse_qs
 from jinja2 import Environment, FileSystemLoader
 
 
-
+with open(os.path.join('data', 'product.json'), 'r', encoding='utf-8') as f:
+    product_data = json.load(f)
 
 env = Environment(loader=FileSystemLoader('patterns'))
 
@@ -27,7 +29,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             content = template.render()
         elif path == '/products':
             template = env.get_template('products.html')
-            content = template.render()
+            content = template.render(products=product_data)
         elif path == '/contact':
             template = env.get_template('contact.html')
             content = template.render()

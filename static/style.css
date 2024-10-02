@@ -178,34 +178,35 @@ footer {
     transition: transform 0.3s ease;
 }
 
-    .product-item:hover {
-        transform: translateY(-5px);
-    }
+.product-item:hover {
+    transform: translateY(-5px);
+}
 
-    .product-item img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-right: 20px;
-    }
+.product-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
 
 .product-info {
     flex-grow: 1;
 }
 
-    .product-info h3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
+.product-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
-    .product-info p {
-        font-size: 18px;
-    }
+.product-info p {
+    font-size: 18px;
+}
 
 .product-price {
     font-size: 20px;
     color: #d35400;
 }
+
 
 /* Секция для страницы "Контакты" */
 .contacts-section {
